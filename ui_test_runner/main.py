@@ -21,16 +21,16 @@ query_type_map = {
 }
 output_map = {
     "TopAnswer": {
-      "n_results": 10,
-      "good": True,
+        "n_results": 10,
+        "good": True,
     },
     "Acceptable": {
-      "n_results": 50,
-      "good": True,
+        "n_results": 50,
+        "good": True,
     },
     "BadButForgivable": {
-      "n_results": 50,
-      "good": False,
+        "n_results": 50,
+        "good": False,
     },
     "NeverShow": {
         "n_results": 100000,
