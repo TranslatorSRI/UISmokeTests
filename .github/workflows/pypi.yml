@@ -51,15 +51,17 @@ jobs:
       with:
         name: python-package-distributions
         path: dist/
-    - name: Publish distribution 📦 to PyPI
+    - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://test.pypi.org/legacy/
   publish-to-pypi:
-    name: Publish Python package to Test PyPI
+    name: Publish Python package to PyPI
     needs:
     - build
     runs-on: ubuntu-latest
     environment:
-      name: testpypi
+      name: pypi
       url: https://pypi.org/p/UI-Test-Runner
     permissions:
       id-token: write
@@ -69,5 +71,5 @@ jobs:
       with:
         name: python-package-distributions
         path: dist/
-    - name: Publish distribution 📦 to Test PyPI
+    - name: Publish distribution 📦 to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
