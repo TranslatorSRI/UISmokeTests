@@ -63,5 +63,11 @@ jobs:
       url: https://pypi.org/p/UI-Test-Runner
     permissions:
       id-token: write
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v3
+      with:
+        name: python-package-distributions
+        path: dist/
     - name: Publish distribution 📦 to Test PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
