@@ -2,7 +2,7 @@
 This testing framework performs UI Pass/Fail analysis on queries it receives from the Translator Test Harness.
 
 ## Installation
-`pip install ui_test_runner`
+`pip install ui-test-runner`
 
 ## Usage
 ```python
