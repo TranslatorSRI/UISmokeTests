@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(
-    name="ui-test-runner",
+    name="UI-Test-Runner",
     version="0.0.1",
     author="CoVar",
     url="https://github.com/TranslatorSRI/UI_Test_Runner",
