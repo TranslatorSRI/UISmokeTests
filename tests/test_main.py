@@ -1,7 +1,7 @@
 """Test the UI Test Runner."""
 import pytest
 
-from ui_test_runner.main import run_ui_test
+from ui_test_runner import run_ui_test
 
 
 def test_run_test(httpx_mock):
